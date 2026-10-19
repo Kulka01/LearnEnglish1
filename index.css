@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://cdn.dbimg.app/X4ewm5fA.jpg);
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family:  'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    margin: 30px auto 0;
+    border: 3px solid darkgreen;
+    border-radius: 20px;
+    padding: 5px 20px 30px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerimg {
+    width: 500px;
+    height: 300px;
+
+}
+.containerimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+
+}
+
+p {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container p {
+    color: black;
+}
+
+h1 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2 {
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button {
+    gap: 10px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: grey;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+video {
+   display: block;
+   margin: 40px auto 0;
+   border-radius: 20px;
+   width: 360px;
+   height: 360px; 
+}
+#feed {
+    color:white;
+}
+#contact{
+    color:white;
+    font-size: 15px;
+    text-align: right
+}
+#contact a {
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: none;
+        box-sizing: border-box;
+        padding: 5px 10px 20px;
+        margin-top: 20px;
+    }
+
+    .containerimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerimg img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .container p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .buttons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        box-sizing: border-box;
+    }
+    .buttons button {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 10px 4px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+        cursor: pointer;
+    }
+    video {
+        width: 100%;
+        max-width: 360px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        box-sizing: border-box;
+    }}
+
+    
+    
+      
+
